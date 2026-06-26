@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* All Over Setting */
+h2 {
+  font-size: 35px;
+}
+
+/* Navbar Properties */
+nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin: auto auto 0px auto;
+  width: 100%;
+  height: 100%;
+}
+
+#navbar_img {
+  float: left;
+  margin-right: auto;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+}
+
+.navbar li {
+  gap: 20px;
+  float: right;
+}
+
+.current {
+  background: linear-gradient(to right, #0073a6, #00345a);
+}
+
+.home_button:hover,
+.bungee_button:hover,
+.contact_button:hover,
+.gallery_button:hover {
+  background: linear-gradient(to right, #0073a6, #00345a);
+}
+
+.home_button {
+  background: linear-gradient(to right, #ec0981, #ef4740);
+}
+
+.bungee_button {
+  background: linear-gradient(to right, #ef4740, #df7c27);
+}
+
+.contact_button {
+  background: linear-gradient(to right, #df7c27, #cca72d);
+}
+
+.gallery_button {
+  background: linear-gradient(to right, #cca72d, #bbca3f);
+}
+
+/* Home Page */
+section {
+  padding-top: 0px;
+  width: 100%;
+}
+
+/* Section 1 */
+#home_sec_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(ultra_bungee_imgs/ultra-bungee-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10%;
+  padding-top: 0px;
+  width: 100%;
+  height: 93vh;
+}
+
+#sec_1_text {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: #ed0a83;
+  padding: 50px;
+  border-radius: 15px;
+  align-self: flex-end;
+  margin-bottom: 25px;
+}
+
+/* Section 2 */
+#home_sec_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10%;
+  padding-top: 0px;
+  width: 100%;
+  height: 93vh;
+}
+
+#sec_2_left {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: white;
+}
+
+#sec_2_right {
+}
+
+/* Section 3 */
+#home_sec_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(ultra_bungee_imgs/canyon3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50%;
+  padding-top: 0px;
+  width: 100%;
+  height: 93vh;
+}
+
+#sec_3_text {
+  color: white;
+  background-color: rgba(255, 255, 255, 40%);
+}
+
+/* Gallery Page */
+#gallery_images {
+  /* want the images to be displayed as a grid, 4, 4, 2 */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 30vh;
+}
